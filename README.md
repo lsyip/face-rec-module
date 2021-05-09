@@ -31,14 +31,16 @@ Picamera, face_recognition, adafruit_fingerprint, nodejs, and python-shell
 6. Run the smart mirror: `npm start`
 
 ## Challenges and What We Learned:
-One of the main challenges was making the connections between the existing MagicMirror software and our own module without any experience with node.js and very little with python. The solution for this was to take the time to study a lot of other third-party modules to try and understand how they did this. 
+One of the main challenges was making the connections between the existing MagicMirror software and our own module without any experience with node.js and very little with python. The solution for this was to take the time to study a lot of other third-party modules to try and understand how they did this. We also faced some challenges with the hardware aspect of the project, specifically with the circuitry needed to activate the locking mechanism which we were unable to finalize, in addition to doing ample enough research on all the hardware that would be necessary for the fingerprint scanner to properly connect to our Raspberry Pi. 
+
 In the end, we learned that a lot can be accomplished if we just put in the time to figure things out. 
 	
 ## Accomplishments We’re Proud of:
    * Building our own module that uses facial recognition and fingerprinting.
-   * Learning a bunch of new technologies in a few weeks.
+   * Learning several new technologies in a short period of time: Javascript, Python, Raspberry Pi, command line commands, basic hardware assembly, and minor electronics circuitry. 
 
 ## What’s Next for our Smart Mirror Module:
    * Connecting a solenoid to secure a medicine cabinet door.
    * Session timers so the mirror won’t have to be restarted to rerun the recognition code.
    * Realtime setup so images and fingerprints don’t have to be manually uploaded.
+   * Voice recognition to set up a keyword to initiate the python code once the user wants access to the secret compartment. 

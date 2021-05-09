@@ -8,6 +8,9 @@ import RPi.GPIO as GPIO    # Needed for controlling GPIO Pins
 import adafruit_fingerprint
 
 ################################################################################
+
+# The get_fingerprint() method waits for a fingerprint to be recognized on the scanner and returns
+# a boolean True if a fingerprint has a match, False if not. 
 def get_fingerprint():
     """Get a fingerprint image, template it, and see if it matches!"""
     print("Waiting for image...")

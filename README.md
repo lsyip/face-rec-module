@@ -3,6 +3,8 @@ Team Members: Alex Martinez, Nicholas Balch, and Lynn Yip
 
 Final Project for CIS111B, Spring 2021
 
+[Video Demo](https://youtu.be/1X5kIvcxsyU)
+
 
 ## What it does: 
 A smart mirror module that identifies the current user through both facial and fingerprint recognition. If the user is authorized, the mirror will display their name on the screen. 

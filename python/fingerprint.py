@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
+# import necessary packages
 import time
 import board
 import busio
@@ -21,7 +22,8 @@ finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
 
 ##################################################
 
-
+# The get_fingerprint() method waits for a fingerprint to be scanned and then
+# returns a boolean True if the fingerprint has a stored match, False if not. 
 def get_fingerprint():
     """Get a finger print image, template it, and see if it matches!"""
     print("Waiting for image...")
@@ -37,6 +39,9 @@ def get_fingerprint():
 
 
 # pylint: disable=too-many-branches
+
+# The get_fingerprint_detail() method templates fingerprints and searches for a match. 
+# Returns True if the fingerprint is found, False if not. 
 def get_fingerprint_detail():
     """Get a finger print image, template it, and see if it matches!
     This time, print out each error instead of just returning on failure"""
@@ -84,6 +89,8 @@ def get_fingerprint_detail():
 
 
 # pylint: disable=too-many-statements
+# The enroll_finger() method takes a location and stores fingerprints there. 
+# Returns a boolean True if enrollment was successful, False if not. 
 def enroll_finger(location):
     """Take a 2 finger images and template it, then store in 'location'"""
     for fingerimg in range(1, 3):
@@ -156,7 +163,7 @@ def enroll_finger(location):
 
 ##################################################
 
-
+# The get_num() method returns a valid number to use as an fingerprint id. 
 def get_num():
     """Use input() to get a valid number from 1 to 127. Retry till success!"""
     i = 0
